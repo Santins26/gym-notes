@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Notes</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="head">
+        <h1>Gym Notes</h1>
+    </div>
+
+    <select name="day" id="day">
+        <option value="segunda">Segunda</option>
+        <option value="terca">Terça</option>
+        <option value="quarta">Quarta</option>
+        <option value="quinta">Quinta</option>
+        <option value="sexta">Sexta</option>
+        <option value="sabado">Sábado</option>
+    </select>
+
+    <div id="auth">
+
+    <h2>Minha conta</h2>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Seu email"
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Sua senha"
+    >
+
+    <button id="signup">
+        Criar conta
+    </button>
+
+    <button id="login">
+        Entrar
+    </button>
+
+    <button id="logout">
+        Sair
+    </button>
+
+</div>
+
+    <div id="exercises"></div>
+
+
+    <div id="addExercise">
+
+        <h2>Adicionar exercício</h2>
+
+        <input
+            type="text"
+            id="exerciseName"
+            placeholder="Nome do exercício"
+        >
+
+        <button id="add">
+            Adicionar
+        </button>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

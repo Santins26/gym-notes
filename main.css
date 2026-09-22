@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+h1, h3 {
+    color: whitesmoke;
+}
+
+.head {
+    border: 1px solid white;
+    width: 100%;
+}
+
+.content {
+    border: 1px solid white;
+    height: 80rem;
+}
+
+
+label, button, input, textarea, select {
+  color: inherit;
+  background: transparent;
+  border: 1px solid #555;
+}
+
+
+::placeholder {
+  color: #aaa;
+}
