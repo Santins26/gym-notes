@@ -101,9 +101,9 @@ async function renderExercises() {
 
         div.classList.add("exercise");
 
-        div.innerHTML = `
+        div.innerHTML = ` 
             <h3>${exercise.name}</h3>
-            1 SET <br>
+            <h3 class="serie1">1 SÉRIE </h3> <br>
 
             <label>
                 
@@ -121,7 +121,7 @@ async function renderExercises() {
             <br>
             <br>
 
-            2 SET <br>
+            <h3 class="serie2">2 SÉRIE </h3><br>
 
             <label>
                 
@@ -145,7 +145,7 @@ async function renderExercises() {
             <button class="remove-button" data-id="${exercise.id}">
     Remover exercício
 </button>
-
+<br> ---------------------------------------------------------------------------------------------------------------------------------------
             <div class="history">
     <h4>Histórico</h4>
 </div>
@@ -202,6 +202,7 @@ loadHistory(exercise.id, historyDiv);
                     `Série ${set.set_number}: ${set.weight} kg × ${set.reps} reps`;
 
                 workoutDiv.appendChild(item);
+                
             });
 
         historyDiv.appendChild(workoutDiv);
